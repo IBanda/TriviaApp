@@ -2,8 +2,7 @@
 
 ---
 
-![](ReadMe/TriviaApp1.png)
-![](ReadMe/TriviaApp2.png)
+<img src="images/TriviaApp1.png" width="300"/> <img src="images/TriviaApp2.png" width="300"/>
 
 ---
 
