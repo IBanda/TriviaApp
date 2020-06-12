@@ -1,13 +1,15 @@
-## #TriviaApp
+## TriviaApp
 
 ---
 
-![](ReadMe/TriviaApp1.jpg)
-![](ReadMe/TriviaApp2.jpg)
+![](ReadMe/TriviaApp1.png)
+![](ReadMe/TriviaApp2.png)
 
 ---
 
-**API:**[title](https://www.example.com)
+## **API:**
+
+The App uses [jservice](http://jservice.io/) for the Trivia questions and answers
 
 # Getting started
 
