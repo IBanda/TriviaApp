@@ -23,7 +23,8 @@ const Counter = ({ showAnswer, gameOn, isNextCall, handleNextCall }) => {
       setTime(60);
     }
     return () => clearInterval(interval);
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gameOn, isNextCall, time]);
   const playSound = async () => {
     const soundObject = new Audio.Sound();
     try {

@@ -33,6 +33,7 @@ const Game = ({ route, navigation }) => {
     // eslint-disable-next-line no-undef
     const Controller = new AbortController();
     const { signal } = Controller;
+    console.log('fetch');
     fetch(`http://jservice.io/api/category/?id=${id}`, { signal })
       .then((response) => response.json())
       .then((data) => {
@@ -50,9 +51,8 @@ const Game = ({ route, navigation }) => {
       })
       .finally(() => setLoading(false));
 
-    return () => {
-      Controller.abort();
-    };
+    return () => Controller.abort();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const question = questions.length ? questions[index].question : null;

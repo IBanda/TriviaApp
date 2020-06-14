@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   Dimensions,
   ImageBackground,
-  View,
 } from 'react-native';
 
 const CategoryCard = (props) => {
@@ -19,18 +18,9 @@ const CategoryCard = (props) => {
   };
   return (
     <TouchableOpacity onPress={handlePress} style={styles.touchOpacity}>
-      {title !== 'Random' ? (
-        <ImageBackground
-          style={[styles.container, backgroundColor]}
-          source={src}
-        >
-          <Text style={styles.title}>{title}</Text>
-        </ImageBackground>
-      ) : (
-        <View style={[styles.container, backgroundColor]}>
-          <Text style={styles.title}>{title}</Text>
-        </View>
-      )}
+      <ImageBackground style={[styles.container, backgroundColor]} source={src}>
+        <Text style={styles.title}>{title}</Text>
+      </ImageBackground>
     </TouchableOpacity>
   );
 };
